@@ -12,19 +12,19 @@ public class Customer {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	private String firstName;
-	private String lastname;
+	private String lastName;
 	
 	protected Customer() {}
 	
 	public Customer(String firstName, String lastName) {
 		this.firstName=firstName;
-		this.lastname=lastName;
+		this.lastName=lastName;
 		
 	}
 
 	@Override
 	public String toString() {
-		return "Customer [id=" + id + ", firstName=" + firstName + ", lastname=" + lastname + "]";
+		return "Customer [id=" + id + ", firstName=" + firstName + ", lastname=" + lastName + "]";
 	}
 
 	public Long getId() {
@@ -35,8 +35,8 @@ public class Customer {
 		return firstName;
 	}
 
-	public String getLastname() {
-		return lastname;
+	public String getLastName() {
+		return lastName;
 	}
 	
 	
